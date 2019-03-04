@@ -7,7 +7,7 @@ class PrintDemo {
    private final Lock queueLock = new ReentrantLock();
 
    public void print() {
-      queueLock.lock();
+      queueLock.lock();;
 
       try {
          Long duration = (long) (Math.random() * 10000);
